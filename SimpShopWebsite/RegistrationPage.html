@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Sign Up Form</title>
+
+    <link rel="stylesheet" href="SimpShopCSS.css">
+
+</head>
+<body>
+
+    <form action="http://localhost/SimpShop/Database.php" method="post">
+
+        <h1>Sign Up</h1>
+
+        <fieldset>
+            <legend><span class="number">1</span>Your basic info</legend>
+            
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"> <!--- <span class="misc"> <?php echo $nameErr;?> </span> -->
+            <br><br>
+
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username"> <!--- <span class="misc"> <?php echo $usernameErr;?> </span> -->
+            <br><br>
+           
+            <label for="mail">Email:</label>
+            <input type="email" id="mail" name="email"> <!--- <span class="misc"> <?php echo $emailErr;?> </span>-->
+            <br><br>
+            <label for="contact">Contact:</label>
+            <input type="tel" id="contact" name="contact"> <!--- <span class="misc"> <?php echo $contactErr;?> </span>-->
+            <br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"> <!--- <span class="misc"> <?php echo $passwordErr;?> </span>-->
+            <br><br>
+            <label>Gender:</label>
+            <input type="radio" id="female" value="Female" name="gender"><label for="Female" class="light">Female</label><br>
+            <input type="radio" id="male" value="Male" name="gender"><label for="Male" class="light">Male</label>
+            <!--- <span class="misc"> <?php echo $genderErr;?> </span> -->
+            <br><br>
+        </fieldset>
+
+        
+        
+        <button type="submit">Sign Up</button>
+    </form>
+</body>
+</html>
